@@ -1,0 +1,175 @@
+body {
+    margin: auto;
+    padding: 50px;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Box (for corners & padding) */
+.box {
+    padding-left: 20px;
+    /* border-radius: 10px; */
+    background-color: #ddd;
+}
+
+
+/* Set up grids... specifics */
+
+/*  #### Grid for Main page #### */
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "banner nav"
+        "main main"
+        "footer footer";
+        grid-gap: 4px;
+    
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #DDD;  /* silver */
+    font-size: 150%;
+    padding: 20px;
+    vertical-align: middle;
+    border: solid 1px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #eee;  /* very pale grey */
+    border: solid 1px #CCC;
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+    padding: 20px;
+}
+
+/*  #### Grid for Navigation area page #### */
+
+.linkwrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-areas: 
+        "commonsearches topsearch topadmin";
+    grid-gap: 4px;
+}
+
+
+.commonsearches {
+    grid-area: commonsearches;
+    text-align: center;
+}
+
+.topsearch {
+    grid-area: topsearch;
+    text-align: right;
+}
+
+.topadmin {
+    grid-area: topadmin;
+    text-align: center;
+}
+
+/* ### Additional div styling (put colours / corners here) */
+
+
+/* Area colouring... */
+
+/* logo, banner and footer background are the same */
+.logo, .banner, .footer {
+    background-color: #888;  /* dark grey */
+}
+
+/* Set font on dark areas to white */
+.logo, .banner, .side, .footer {
+    color: #fff;
+}
+
+/* #### Links Styling  #### */
+
+/* Navigation Links */
+a.topnav {font-weight: bold;}
+a.topnav:link, a.topnav:visited {color: #007c72;} /*dark teal */
+a.topnav:hover {color: #707a00; text-decoration: none;} 
+
+
+/* links in page */
+a {font-weight: bold;}
+a:link{color: #007c72;} /* dark teal */
+a:visited{color: #222;} /* dark grey */
+a:hover{color: #707a00;}    /* Dark Green*/
+
+/* #### Headings / text styling #### */
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sub_heading {
+    font-family: 'Ubuntu', sans-serif;
+    color: #593849; /* purple */
+    font-weight: bold;
+}
+
+/* ### Form / Search  Styling #### */
+
+form {
+    width: 100%;
+}
+
+.search {
+    background:#fff;
+    width: 75%;
+}
+
+.submit::-moz-focus-inner { 
+    border: 0;
+}
+
+
+.submit {
+    font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position:relative;
+    width: 45px;
+    font-size: 14px;
+    
+    left:-5px;
+    background-color: #636263; 
+    color:#d6d3d7;
+    border: 1px solid #000;
+    border-radius: 0 5px 5px 0;   
+    display: inline-block;
+    padding: 10px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #000;
+}
+
+
+input {
+    font-size: 14px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #000;
+    box-sizing: border-box; 
+}
+
+
+.quicksearch {
+    border-radius: 5px 0 0 5px; 
+    display: inline-block;
+}
+
