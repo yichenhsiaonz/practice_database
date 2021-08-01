@@ -74,7 +74,20 @@ include("functions.php");
         
         <div class="box main">
             
-            
+            <?php
+
+            if(!isset($_REQUEST['page'])) {
+                include("content/home.php");
+            }
+
+            else{
+                $page=preg_replace('/[^0-9a-zA-Z]-/', '',$_REQUEST['page']);
+                include("content/$page.php");
+            }
+
+            ?>
+
+
         </div>    <!-- / main -->
         
 
