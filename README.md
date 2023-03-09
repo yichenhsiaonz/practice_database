@@ -1,3 +1,3 @@
 # practice_database
-High school project.\
+High school class project.\
 PHP database and html frontend.
