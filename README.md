@@ -1,3 +1,4 @@
 # practice_database
 High school class project.\
-PHP database and HTML frontend that allows the user to search and filter through the database. Also allows editing of the database through the frontend with an admin login.
+PHP database and HTML frontend that allows the user to search and filter through the database. Also allows editing of the database through the frontend with an admin login.\
+Currently non-functional as high school local server database is inaccessible.
